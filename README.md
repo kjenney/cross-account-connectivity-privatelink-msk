@@ -6,7 +6,7 @@ MSK Brokers connected to a VPC in a different account using Privatelink
 
 2 separate AWS accounts:
 
-1. service_provider: AWS Account that is hosting a service.
+1. service_provider: AWS Account that is hosting the MSK cluster.
 2. service_consumer: AWS Account that is accessing the service_provider service.
 
 * 1 VPC per AWS account - separate CIDRs per VPC

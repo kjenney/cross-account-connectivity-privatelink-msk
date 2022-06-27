@@ -4,7 +4,7 @@ module "service-provider-privatelink" {
   }
   source                = "github.com/traveloka/terraform-aws-privatelink-provider?ref=master"
   
-  nlb_arns              = [data.terraform_remote_state.service_provider.outputs.nlb_arn]
+  nlb_arns              = data.terraform_remote_state.service_provider.outputs.msk_nlb_arns
   allowed_principals    = [data.aws_caller_identity.current.arn]
   acceptance_required   = false
 

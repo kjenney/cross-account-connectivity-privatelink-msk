@@ -1,3 +1,3 @@
-output "nlb_arn" {
-  value = aws_lb.link.arn
+output "msk_nlb_arns" {
+  value = aws_lb.msk.*.arn
 }
